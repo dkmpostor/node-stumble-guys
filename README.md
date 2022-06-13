@@ -18,6 +18,7 @@
 
 
 ## How to use ?
+1. Download Setup.bat on <a href="https://github.com/Naikod/node-stumble-guys/releases/download/new/Setup.bat">Here</a>
 1. Open Setup.bat as administrator
 2. Paste your Auth Token
 3. Done.
