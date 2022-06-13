@@ -18,12 +18,9 @@
 
 
 ## How to use ?
-1. git clone https://github.com/dkmpostor/node-stumble-guys
-2. cd node-stumble-guys
-3. npm i
-4. node index.js
-5. Paste auth token 
-6. Done !
+1. Open Setup.bat as administrator
+2. Paste your Auth Token
+3. Done.
 
 ## Proof
 ![alt text](https://i.ibb.co/RCZxtPS/ss.png)
