@@ -40,6 +40,7 @@ Features :
 `);
 
     const feature = rs.question('[+] Enter feature needed : ');
+    const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
     const auth = rs.question('[+] Enter your auth token : ');
     console.log('');
 
@@ -48,7 +49,7 @@ Features :
         while (true) {
 
             var code = '3';
-            const result = await GoStumble(code, auth);
+            const result = await GoStumble(code, time, auth);
             if (!result) {
 
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
@@ -63,7 +64,7 @@ Features :
                 const crown = data.User.Crowns;
                 
                 console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
-                await delay(60000)
+                await delay(time)
 
             } else if (result == 'BANNED') {
 
@@ -82,7 +83,7 @@ Features :
         while (true) {
 
             var code = '2';
-            const result = await GoStumble(code, auth);
+            const result = await GoStumble(code, time, auth);
             if (!result) {
 
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
@@ -96,7 +97,7 @@ Features :
                 const trophy = data.User.SkillRating;
                 
                 console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)}`));
-                await delay(60000)
+                await delay(time);
                 
             } else if (result == 'BANNED') {
 
