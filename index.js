@@ -83,7 +83,7 @@ Features :
         while (true) {
 
             var code = '2';
-            const result = await GoStumble(code, auth, auth);
+            const result = await GoStumble(code, auth, time);
             if (!result) {
 
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
