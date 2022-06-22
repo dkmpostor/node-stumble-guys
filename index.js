@@ -40,8 +40,8 @@ Features :
 `);
 
     const feature = rs.question('[+] Enter feature needed : ');
-    const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
     const auth = rs.question('[+] Enter your auth token : ');
+    const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
     console.log('');
 
     if (feature == '1') {
@@ -49,7 +49,7 @@ Features :
         while (true) {
 
             var code = '3';
-            const result = await GoStumble(code, time, auth);
+            const result = await GoStumble(code, auth, time);
             if (!result) {
 
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
@@ -83,7 +83,7 @@ Features :
         while (true) {
 
             var code = '2';
-            const result = await GoStumble(code, time, auth);
+            const result = await GoStumble(code, auth, auth);
             if (!result) {
 
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
