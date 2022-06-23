@@ -52,7 +52,7 @@ Features :
         while (true) {
 
             var code = '3';
-            const result = await GoStumble(code, auth, time);
+            const result = await GoStumble(code, auth);
             if (!result) {
 
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
@@ -92,7 +92,7 @@ Features :
         while (true) {
 
             var code = '2';
-            const result = await GoStumble(code, auth, time);
+            const result = await GoStumble(code, auth);
             if (!result) {
 
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
@@ -131,7 +131,7 @@ Features :
         while (true) {
 
             var code = '1';
-            const result = await GoStumble(code, auth, time);
+            const result = await GoStumble(code, auth);
             if (!result) {
 
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
@@ -170,7 +170,7 @@ Features :
         while (true) {
 
             var code = '0';
-            const result = await GoStumble(code, auth, time);
+            const result = await GoStumble(code, auth);
             if (!result) {
 
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
