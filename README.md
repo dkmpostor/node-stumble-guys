@@ -6,8 +6,10 @@
 2. Intercept Stumble Guys ! Then play until you got Rank 1
 3. If you already got Rank 1 , Claim the reward and make sure your crown increases
 4. Open HTTP Canary and search :
-* http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3 for Trophy and Crowns
-* http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/2 for Trophy Only
+* http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3 for Feature 1
+* http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/2 for Feature 2
+* http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/1 for Feature 3
+* http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/0 for Feature 4
 5. Go to request tab and copy authorization value !
 6. After running bot , close the game & dont relogin .. It will expire your token
 7. DO WITH YOUR OWN RISK !! YOUR ACCOUNT WILL BE BANNED
