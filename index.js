@@ -35,8 +35,10 @@ By : ${chalk.red('@dkmpostor')} - ${chalk.blue('https://dkmpostor.netlify.app/')
 
 Features :
 
-1. ${chalk.magenta('Push Crown + Trophy')}
-2. ${chalk.magenta('Push Trophy Only')}
+1. ${chalk.magenta('Reward : 1 Crown + 30 Trophy + 35 Star ( Stumble Pass ) + 3000 EXP')}
+2. ${chalk.magenta('Reward : 20 Trophy + 30 Star ( Stumble Pass ) + 1500 EXP')}
+3. ${chalk.magenta('Reward : 10 Trophy + 25 Star ( Stumble Pass ) + 500 EXP')}
+4. ${chalk.magenta('Reward : 20 Star ( Stumble Pass ) + 100 EXP')}
 `);
 
     const feature = rs.question('[+] Enter feature needed : ');
@@ -60,10 +62,12 @@ Features :
                 const data = JSON.parse(result);
                 const username = data.User.Username;
                 const country = data.User.Country;
+                const exp = data.User.Experience;
+                const tokenPass = data.User.BattlePass.PassTokens;
                 const trophy = data.User.SkillRating;
                 const crown = data.User.Crowns;
                 
-                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
+                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} | ${chalk.blue(`Pass Star : ${tokenPass}`)} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
                 await delay(time)
 
             } else if (result == 'BANNED') {
@@ -94,10 +98,81 @@ Features :
                 const data = JSON.parse(result);
                 const username = data.User.Username;
                 const country = data.User.Country;
+                const exp = data.User.Experience;
+                const tokenPass = data.User.BattlePass.PassTokens;
                 const trophy = data.User.SkillRating;
                 
-                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)}`));
-                await delay(time);
+                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} |  ${chalk.blue(`Pass Star : ${tokenPass}`)}  | ${chalk.blue(`Trophy : ${trophy}`)}`));
+                await delay(time)
+                
+            } else if (result == 'BANNED') {
+
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                break;
+                
+            } else if (result == 'SERVER_ERROR') {
+
+                continue;
+                
+            }
+        }
+
+    } else if (feature == '3') {
+
+        while (true) {
+
+            var code = '1';
+            const result = await GoStumble(code, auth, time);
+            if (!result) {
+
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                break;
+
+            } else if (result.includes('User')) {
+
+                const data = JSON.parse(result);
+                const username = data.User.Username;
+                const country = data.User.Country;
+                const exp = data.User.Experience;
+                const tokenPass = data.User.BattlePass.PassTokens;
+                const trophy = data.User.SkillRating;
+                
+                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} |  ${chalk.blue(`Pass Star : ${tokenPass}`)}  | ${chalk.blue(`Trophy : ${trophy}`)}`));
+                await delay(time)
+                
+            } else if (result == 'BANNED') {
+
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                break;
+                
+            } else if (result == 'SERVER_ERROR') {
+
+                continue;
+                
+            }
+        }
+
+    } else if (feature == '4') {
+        
+        while (true) {
+
+            var code = '0';
+            const result = await GoStumble(code, auth, time);
+            if (!result) {
+
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                break;
+
+            } else if (result.includes('User')) {
+
+                const data = JSON.parse(result);
+                const username = data.User.Username;
+                const country = data.User.Country;
+                const exp = data.User.Experience;
+                const tokenPass = data.User.BattlePass.PassTokens;
+                
+                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} | ${chalk.blue(`Pass Star : ${tokenPass}`)}`));
+                await delay(time)
                 
             } else if (result == 'BANNED') {
 
@@ -113,7 +188,7 @@ Features :
 
     } else {
 
-        console.log(chalk.red('[!] Features not available !'));
+        console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong feature !`));
 
     }
     
