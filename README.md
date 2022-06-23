@@ -3,8 +3,12 @@
 * Download : [HTTP Cannary](https://apkcombo.com/id/httpcanary-http-sniffer-capture-analysis/com.guoshi.httpcanary)
 
 1. Install HTTP Cannary or any Traffic Intercept apk to your phone
-2. Intercept Stumble Guys ! Then play until you got Rank 1
-3. If you already got Rank 1 , Claim the reward and make sure your crown increases
+2. Intercept Stumble Guys ! Then play the game
+3. Note :
+* If u want to using Feature 1 . Play the game until you be a winner / Top 1
+* If u want to using Feature 2 . Play the game until you in the Top 8
+* If u want to using Feature 3 . Play the game until you in the Top 16
+* If u want to using Feature 4 . Just play in the First Round ( Eliminated )
 4. Open HTTP Canary and search :
 * http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3 for Feature 1
 * http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/2 for Feature 2
