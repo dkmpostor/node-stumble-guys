@@ -42,11 +42,12 @@ Features :
 `);
 
     const feature = rs.question('[+] Enter feature needed : ');
-    const auth = rs.question('[+] Enter your auth token : ');
-    const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
-    console.log('');
 
     if (feature == '1') {
+
+        const auth = rs.question('[+] Enter your auth token : ');
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
+        console.log('');
 
         while (true) {
 
@@ -84,6 +85,10 @@ Features :
         
     } else if (feature == '2') {
 
+        const auth = rs.question('[+] Enter your auth token : ');
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
+        console.log('');
+
         while (true) {
 
             var code = '2';
@@ -119,6 +124,10 @@ Features :
 
     } else if (feature == '3') {
 
+        const auth = rs.question('[+] Enter your auth token : ');
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
+        console.log('');
+
         while (true) {
 
             var code = '1';
@@ -153,6 +162,10 @@ Features :
         }
 
     } else if (feature == '4') {
+
+        const auth = rs.question('[+] Enter your auth token : ');
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
+        console.log('');
         
         while (true) {
 
@@ -188,7 +201,7 @@ Features :
 
     } else {
 
-        console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong feature !`));
+        console.log(chalk.red(`\n[ ${moment().format('HH:mm:ss')} ] Wrong feature !`));
 
     }
     
