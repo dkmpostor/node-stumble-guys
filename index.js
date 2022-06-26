@@ -46,7 +46,7 @@ Features :
     if (feature == '1') {
 
         const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
         console.log('');
 
         while (true) {
@@ -86,7 +86,7 @@ Features :
     } else if (feature == '2') {
 
         const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
         console.log('');
 
         while (true) {
@@ -125,7 +125,7 @@ Features :
     } else if (feature == '3') {
 
         const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
         console.log('');
 
         while (true) {
@@ -164,7 +164,7 @@ Features :
     } else if (feature == '4') {
 
         const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
         console.log('');
         
         while (true) {
