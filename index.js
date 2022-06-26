@@ -25,28 +25,28 @@ const GoStumble = (code, auth) => new Promise((resolve, reject) => {
 (async () => {
 
     console.log(`
-███████ ████████ ██    ██ ███    ███ ██████  ██      ███████         
-██         ██    ██    ██ ████  ████ ██   ██ ██      ██           
-███████    ██    ██    ██ ██ ████ ██ ██████  ██      █████          
-     ██    ██    ██    ██ ██  ██  ██ ██   ██ ██      ██            
-███████    ██     ██████  ██      ██ ██████  ███████ ███████    
+╱╱▏┈┈╱╱╱╱▏╱╱▏
+▇╱▏┈┈▇▇▇╱▏▇╱▏       FadlanXyz#7263
+▇╱▏▁┈▇╱▇╱▏▇╱▏▁
+▇╱╱╱▏▇╱▇╱▏▇╱╱╱
+▇▇▇╱┈▇▇▇╱┈▇▇▇╱
 
-By : ${chalk.red('@dkmpostor')} - ${chalk.blue('https://dkmpostor.netlify.app/')}
+By : ${chalk.red('@FadlanXyz#7263 & @dkmpostor')} - ${chalk.bgGreen('https://sociabuzz.com/fadlana')}
 
 Features :
 
-1. ${chalk.magenta('Reward : 1 Crown + 30 Trophy + 35 Star ( Stumble Pass ) + 3000 EXP')}
-2. ${chalk.magenta('Reward : 20 Trophy + 30 Star ( Stumble Pass ) + 1500 EXP')}
+1. ${chalk.bgRed('Reward : 1 Crown + 30 Trophy + 35 Star ( Stumble Pass ) + 3000 EXP')}
+2. ${chalk.yellow('Reward : 20 Trophy + 30 Star ( Stumble Pass ) + 1500 EXP')}
 3. ${chalk.magenta('Reward : 10 Trophy + 25 Star ( Stumble Pass ) + 500 EXP')}
-4. ${chalk.magenta('Reward : 20 Star ( Stumble Pass ) + 100 EXP')}
+4. ${chalk.green('Reward : 20 Star ( Stumble Pass ) + 100 EXP')}
 `);
 
-    const feature = rs.question('[+] Enter feature needed : ');
+    const feature = rs.question('PILIH NOMOR DI ANTARA 1.2.3.4: ');
 
     if (feature == '1') {
 
-        const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
+        const auth = rs.question('Masukin Kode Auth  : ');
+        const time = rs.question('Ketik Delay Sc yang anda mau ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
         console.log('');
 
         while (true) {
@@ -68,12 +68,12 @@ Features :
                 const trophy = data.User.SkillRating;
                 const crown = data.User.Crowns;
                 
-                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} | ${chalk.blue(`Pass Star : ${tokenPass}`)} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
+                console.log(chalk.magenta(`[ ${moment().format('HH:mm:ss')} ] ${chalk.bgRed(Nama Anda : ${username)} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} | ${chalk.yelloa(`Pass Star : ${tokenPass}`)} | ${chalk.green(`Trophy : ${trophy}`)} | ${chalk.bgRed(`Crown : ${crown}`)}`));
                 await delay(time)
 
             } else if (result == 'BANNED') {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Your Account Has Beben Banned !`));
                 break;
                 
             } else if (result == 'SERVER_ERROR') {
@@ -85,8 +85,8 @@ Features :
         
     } else if (feature == '2') {
 
-        const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
+        const auth = rs.question('Masukin Kode Auth Anda ! : ');
+        const time = rs.question('Ketik Delay Sc yang anda mau ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
         console.log('');
 
         while (true) {
