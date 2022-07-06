@@ -46,7 +46,7 @@ Features :
     if (feature == '1') {
 
         const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); 
         console.log('');
 
         while (true) {
@@ -80,14 +80,28 @@ Features :
 
                 continue;
                 
+            } else {
+                
+                /* 
+                
+                    NOTE : MEANS NOTHING !! IF YOU ENTER DELAY 0 OR SMALLER THAN 1 SECONDS , IT WILL BE ERROR LIKE "PATH LIMIT"
+                    SO THIS IS USING FOR SKIP ERROR AND MAKE BOT STILL RUNNING .. IF YOUR BOT STUCK , ITS NORMAL CAUSE ACTUALLY THE RESULT IS ERROR 
+
+                    HOW TO SOLVE : MAKE DELAY BIGGER THAN 1 SECONDS
+
+                */
+
+                continue;
             }
         }
         
     } else if (feature == '2') {
 
         const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); 
         console.log('');
+
+        
 
         while (true) {
 
@@ -119,6 +133,18 @@ Features :
 
                 continue;
                 
+            } else {
+                
+                /* 
+                
+                    NOTE : MEANS NOTHING !! IF YOU ENTER DELAY 0 OR SMALLER THAN 1 SECONDS , IT WILL BE ERROR LIKE "PATH LIMIT"
+                    SO THIS IS USING FOR SKIP ERROR AND MAKE BOT STILL RUNNING .. IF YOUR BOT STUCK , ITS NORMAL CAUSE ACTUALLY THE RESULT IS ERROR 
+
+                    HOW TO SOLVE : MAKE DELAY BIGGER THAN 1 SECONDS
+
+                */
+
+                continue;
             }
         }
 
@@ -158,13 +184,25 @@ Features :
 
                 continue;
                 
+            } else {
+                
+                /* 
+                
+                    NOTE : MEANS NOTHING !! IF YOU ENTER DELAY 0 OR SMALLER THAN 1 SECONDS , IT WILL BE ERROR LIKE "PATH LIMIT"
+                    SO THIS IS USING FOR SKIP ERROR AND MAKE BOT STILL RUNNING .. IF YOUR BOT STUCK , ITS NORMAL CAUSE ACTUALLY THE RESULT IS ERROR 
+
+                    HOW TO SOLVE : MAKE DELAY BIGGER THAN 1 SECONDS
+
+                */
+
+                continue;
             }
         }
 
     } else if (feature == '4') {
 
         const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : '); // Input 0 for no delay ( High Risk)
+        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 1000 = 1 sec ) : ');
         console.log('');
         
         while (true) {
@@ -196,6 +234,17 @@ Features :
 
                 continue;
                 
+            } else {
+
+                /* 
+                
+                    NOTE : MEANS NOTHING !! IF YOU ENTER DELAY 0 OR SMALLER THAN 1 SECONDS , IT WILL BE ERROR LIKE "PATH LIMIT"
+                    SO THIS IS USING FOR SKIP ERROR AND MAKE BOT STILL RUNNING .. IF YOUR BOT STUCK , ITS NORMAL CAUSE ACTUALLY THE RESULT IS ERROR 
+
+                    HOW TO SOLVE : MAKE DELAY BIGGER THAN 1 SECONDS
+
+                */
+                continue;
             }
         }
 
