@@ -76,20 +76,15 @@ Features :
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
                 break;
                 
-            } else if (result == 'SERVER_ERROR') {
+            } else if (result == 'SERVER_ERROR' || result.includes('User path limit exceeded')) {
 
                 continue;
                 
             } else {
                 
-                /* 
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Error !`));
+                break;
                 
-                    NOTE : MEANS NOTHING !! IF YOU ENTER DELAY 0 OR SMALLER THAN 1 SECONDS , IT WILL BE ERROR LIKE "PATH LIMIT"
-                    SO THIS IS USING FOR SKIP ERROR AND MAKE BOT STILL RUNNING .. IF YOUR BOT STUCK , ITS NORMAL CAUSE ACTUALLY THE RESULT IS ERROR 
-
-                */
-
-                continue;
             }
         }
         
@@ -127,20 +122,15 @@ Features :
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
                 break;
                 
-            } else if (result == 'SERVER_ERROR') {
+            } else if (result == 'SERVER_ERROR' || result.includes('User path limit exceeded')) {
 
                 continue;
                 
             } else {
                 
-                /* 
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Error !`));
+                break;
                 
-                    NOTE : MEANS NOTHING !! IF YOU ENTER DELAY 0 OR SMALLER THAN 1 SECONDS , IT WILL BE ERROR LIKE "PATH LIMIT"
-                    SO THIS IS USING FOR SKIP ERROR AND MAKE BOT STILL RUNNING .. IF YOUR BOT STUCK , ITS NORMAL CAUSE ACTUALLY THE RESULT IS ERROR 
-
-                */
-
-                continue;
             }
         }
 
@@ -176,20 +166,15 @@ Features :
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
                 break;
                 
-            } else if (result == 'SERVER_ERROR') {
+            } else if (result == 'SERVER_ERROR' || result.includes('User path limit exceeded')) {
 
                 continue;
                 
             } else {
                 
-                /* 
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Error !`));
+                break;
                 
-                    NOTE : MEANS NOTHING !! IF YOU ENTER DELAY 0 OR SMALLER THAN 1 SECONDS , IT WILL BE ERROR LIKE "PATH LIMIT"
-                    SO THIS IS USING FOR SKIP ERROR AND MAKE BOT STILL RUNNING .. IF YOUR BOT STUCK , ITS NORMAL CAUSE ACTUALLY THE RESULT IS ERROR 
-
-                */
-
-                continue;
             }
         }
 
@@ -224,19 +209,15 @@ Features :
                 console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
                 break;
                 
-            } else if (result == 'SERVER_ERROR') {
+            } else if (result == 'SERVER_ERROR' || result.includes('User path limit exceeded')) {
 
                 continue;
                 
             } else {
 
-                /* 
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Error !`));
+                break;
                 
-                    NOTE : MEANS NOTHING !! IF YOU ENTER DELAY 0 OR SMALLER THAN 1 SECONDS , IT WILL BE ERROR LIKE "PATH LIMIT"
-                    SO THIS IS USING FOR SKIP ERROR AND MAKE BOT STILL RUNNING .. IF YOUR BOT STUCK , ITS NORMAL CAUSE ACTUALLY THE RESULT IS ERROR 
-
-                */
-                continue;
             }
         }
 
